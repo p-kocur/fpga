@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../linia_opozniajaca/linia_opozniajaca.srcs/sources_1/new/delay.v" \
+"../../../../rgbb2ycbcr.srcs/sources_1/new/main.v" \
+"../../../../../linia_opozniajaca/linia_opozniajaca.srcs/sources_1/new/multiple_delay.v" \
+"../../../../rgbb2ycbcr.srcs/sim_1/new/tb_main.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

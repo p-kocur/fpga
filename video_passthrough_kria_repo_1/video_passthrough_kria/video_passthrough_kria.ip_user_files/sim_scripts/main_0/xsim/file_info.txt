@@ -1,0 +1,7 @@
+c_addsub_0.vhd,vhdl,xil_defaultlib,../../../../video_passthrough_kria.gen/sources_1/ip/main_0/src/c_addsub_0/sim/c_addsub_0.vhd,
+mult_gen_0.vhd,vhdl,xil_defaultlib,../../../../video_passthrough_kria.gen/sources_1/ip/main_0/src/mult_gen_0/sim/mult_gen_0.vhd,
+delay.v,verilog,xil_defaultlib,../../../../video_passthrough_kria.gen/sources_1/ip/main_0/src/delay.v,
+multiple_delay.v,verilog,xil_defaultlib,../../../../video_passthrough_kria.gen/sources_1/ip/main_0/src/multiple_delay.v,
+main.v,verilog,xil_defaultlib,../../../../video_passthrough_kria.gen/sources_1/ip/main_0/src/main.v,
+main_0.v,verilog,xil_defaultlib,../../../../video_passthrough_kria.gen/sources_1/ip/main_0/sim/main_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

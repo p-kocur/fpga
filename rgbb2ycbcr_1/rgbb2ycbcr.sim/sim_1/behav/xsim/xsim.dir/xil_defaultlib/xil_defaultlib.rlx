@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/pkocur/Documents/std/systemy_rekonfigurowalne/linia_opozniajaca/linia_opozniajaca.srcs/sources_1/new/delay.v,1743430255,verilog,,/home/pkocur/Documents/std/systemy_rekonfigurowalne/rgbb2ycbcr/rgbb2ycbcr.srcs/sources_1/new/main.v,,delay,,,,,,,,
+/home/pkocur/Documents/std/systemy_rekonfigurowalne/linia_opozniajaca/linia_opozniajaca.srcs/sources_1/new/multiple_delay.v,1743583699,verilog,,/home/pkocur/Documents/std/systemy_rekonfigurowalne/rgbb2ycbcr/rgbb2ycbcr.srcs/sim_1/new/tb_main.v,,multiple_delay,,,,,,,,
+/home/pkocur/Documents/std/systemy_rekonfigurowalne/rgbb2ycbcr/rgbb2ycbcr.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd,1745863266,vhdl,,,,c_addsub_0,,,,,,,,
+/home/pkocur/Documents/std/systemy_rekonfigurowalne/rgbb2ycbcr/rgbb2ycbcr.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1745873772,vhdl,,,,mult_gen_0,,,,,,,,
+/home/pkocur/Documents/std/systemy_rekonfigurowalne/rgbb2ycbcr/rgbb2ycbcr.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+/home/pkocur/Documents/std/systemy_rekonfigurowalne/rgbb2ycbcr/rgbb2ycbcr.srcs/sim_1/new/tb_main.v,1745866491,verilog,,,,tb_main,,,,,,,,
+/home/pkocur/Documents/std/systemy_rekonfigurowalne/rgbb2ycbcr/rgbb2ycbcr.srcs/sources_1/new/main.v,1745875877,verilog,,/home/pkocur/Documents/std/systemy_rekonfigurowalne/linia_opozniajaca/linia_opozniajaca.srcs/sources_1/new/multiple_delay.v,,main,,,,,,,,

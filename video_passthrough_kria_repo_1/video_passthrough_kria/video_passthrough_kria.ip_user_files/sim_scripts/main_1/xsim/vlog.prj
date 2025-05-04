@@ -1,0 +1,9 @@
+verilog xil_defaultlib  \
+"../../../../video_passthrough_kria.gen/sources_1/ip/main_1/src/delay.v" \
+"../../../../video_passthrough_kria.gen/sources_1/ip/main_1/src/multiple_delay.v" \
+"../../../../video_passthrough_kria.gen/sources_1/ip/main_1/src/main.v" \
+"../../../../video_passthrough_kria.gen/sources_1/ip/main_1/sim/main_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

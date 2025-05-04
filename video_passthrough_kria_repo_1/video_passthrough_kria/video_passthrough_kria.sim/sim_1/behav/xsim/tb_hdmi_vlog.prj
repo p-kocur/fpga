@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/delay.v" \
+"../../../../video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/multiple_delay.v" \
+"../../../../video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/main.v" \
+"../../../../video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" \
+"../../../../video_passthrough_kria.srcs/sim_1/imports/tb_src/hdmi_in.v" \
+"../../../../video_passthrough_kria.srcs/sim_1/imports/tb_src/hdmi_out.v" \
+"../../../../video_passthrough_kria.srcs/sources_1/new/vision_system.v" \
+"../../../../video_passthrough_kria.srcs/sim_1/imports/tb_src/tb_hdmi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
