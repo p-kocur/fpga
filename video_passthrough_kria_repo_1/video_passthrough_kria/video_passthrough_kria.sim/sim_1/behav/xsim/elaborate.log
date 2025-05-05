@@ -45,6 +45,7 @@ Compiling module xil_defaultlib.delay(N=3)
 Compiling module xil_defaultlib.multiple_delay(N=3,DELAY=5)
 Compiling module xil_defaultlib.main
 Compiling module xil_defaultlib.rgb2ycbcr_0
+Compiling module xil_defaultlib.bin_ycbcr
 Compiling module xil_defaultlib.vision_system
 Compiling module xil_defaultlib.hdmi_out
 Compiling module xil_defaultlib.tb_hdmi

@@ -67,6 +67,9 @@ hdmi_in file_input (
 //assign tx_green = rx_green;
 //assign tx_blue = rx_blue;
 assign pixel_in = {rx_red, rx_green, rx_blue};
+
+wire [3:0]sw;
+
 vision_system lut_table
 (
     .clk(rx_pclk),
@@ -74,6 +77,7 @@ vision_system lut_table
     .hsync_in(rx_hsync),
     .vsync_in(rx_vsync),
     .pixel_in(pixel_in),
+    .sw(sw),
     .de_out(tx_de),
     .hsync_out(tx_hsync),
     .vsync_out(tx_vsync),

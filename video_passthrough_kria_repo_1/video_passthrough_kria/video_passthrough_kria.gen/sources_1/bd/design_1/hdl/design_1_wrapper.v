@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Thu Apr  3 10:13:52 2025
-//Host        : lsriw-krywan running 64-bit Ubuntu 22.04.5 LTS
+//Date        : Mon May  5 19:38:30 2025
+//Host        : pawel-IdeaPad running 64-bit Ubuntu 22.04.5 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist

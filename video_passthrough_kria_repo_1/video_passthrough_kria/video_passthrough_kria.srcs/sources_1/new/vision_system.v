@@ -27,11 +27,22 @@ module vision_system
     input hsync_in,
     input vsync_in,
     input [23:0]pixel_in,
+    input [3:0]sw,
     output de_out,
     output hsync_out,
     output vsync_out,
     output [23:0]pixel_out
 );
+
+wire [23:0]rgb_mux[15:0];
+wire de_mux[15:0];
+wire hsync_mux[15:0];
+wire vsync_mux[15:0];
+
+assign rgb_mux[0] = pixel_in;
+assign de_mux[0] = de_in;
+assign hsync_mux[0] = hsync_in;
+assign vsync_mux[0] = vsync_in;
 
 reg r_de = 0;
 reg r_hsync = 0;
@@ -87,10 +98,28 @@ rgb2ycbcr_0 rgb2ycbcr
     .hsync_in(hsync_in),
     .vsync_in(vsync_in),
     .pixel_in(pixel_in),
-    .de_out(de_out),
-    .hsync_out(hsync_out),
-    .vsync_out(vsync_out),
-    .pixel_out(pixel_out)
+    .de_out(de_mux[1]),
+    .hsync_out(hsync_mux[1]),
+    .vsync_out(vsync_mux[1]),
+    .pixel_out(rgb_mux[1])
 );
+
+bin_ycbcr binary_1
+(
+    .clk(clk),
+    .de_in(de_in),
+    .hsync_in(hsync_in),
+    .vsync_in(vsync_in),
+    .pixel_in(pixel_in),
+    .de_out(de_mux[2]),
+    .hsync_out(hsync_mux[2]),
+    .vsync_out(vsync_mux[2]),
+    .pixel_out(rgb_mux[2])
+);
+
+assign de_out = de_mux[sw];
+assign hsync_out = hsync_mux[sw];
+assign vsync_out = vsync_mux[sw];
+assign pixel_out = rgb_mux[sw];
 
 endmodule

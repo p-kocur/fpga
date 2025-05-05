@@ -114,6 +114,11 @@
         "direction": "O",
         "left": "0",
         "right": "0"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
       }
     },
     "components": {
@@ -556,7 +561,7 @@
                       "width": "12",
                       "usage": "register",
                       "bank_blocks": {
-                        "rx;reg0;xilinx.com:ip:mipi_csi2_rx_ctrl:1.0;rx;s_axi;NONE;NONE": {
+                        "rx;/rx/s_axi/reg0;xilinx.com:ip:mipi_csi2_rx_ctrl:1.0;/rx;s_axi;NONE;NONE": {
                           "base_address": "0x000",
                           "range": "4K",
                           "width": "12",
@@ -5208,7 +5213,21 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "148499090",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_wiz_0_0_clk_out1",
+                "value_src": "default_prop"
+              }
+            }
           },
           "de_in": {
             "direction": "I"
@@ -5222,6 +5241,11 @@
           "pixel_in": {
             "direction": "I",
             "left": "23",
+            "right": "0"
+          },
+          "sw": {
+            "direction": "I",
+            "left": "3",
             "right": "0"
           },
           "de_out": {
@@ -5296,6 +5320,12 @@
         "ports": [
           "preprocess_0/video_out",
           "vision_system_0/pixel_in"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "vision_system_0/sw"
         ]
       },
       "vision_system_0_de_out": {
