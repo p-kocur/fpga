@@ -26,6 +26,6 @@ module preprocess
     output [23:0] video_out
 );
 
-assign video_out={video_in[15:8], video_in[7:0], video_in[23:16]};
+assign video_out={video_in[15:8], video_in[23:16], video_in[0:7]};
 
 endmodule

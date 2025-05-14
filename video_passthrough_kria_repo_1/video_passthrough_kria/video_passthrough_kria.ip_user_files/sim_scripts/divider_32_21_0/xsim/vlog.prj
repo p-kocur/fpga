@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../video_passthrough_kria.gen/sources_1/ip/divider_32_21_0/src/divider_32_21.v" \
+"../../../../video_passthrough_kria.gen/sources_1/ip/divider_32_21_0/sim/divider_32_21_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -44,9 +44,9 @@
         "zynq_ultra_ps_e_0": ""
       },
       "xlconstant_1": "",
-      "preprocess_0": "",
       "postprocess_0": "",
-      "vision_system_0": ""
+      "vision_system_0": "",
+      "preprocess_0": ""
     },
     "interface_ports": {
       "IIC_1_0": {
@@ -561,7 +561,7 @@
                       "width": "12",
                       "usage": "register",
                       "bank_blocks": {
-                        "rx;/rx/s_axi/reg0;xilinx.com:ip:mipi_csi2_rx_ctrl:1.0;/rx;s_axi;NONE;NONE": {
+                        "rx;reg0;xilinx.com:ip:mipi_csi2_rx_ctrl:1.0;rx;s_axi;NONE;NONE": {
                           "base_address": "0x000",
                           "range": "4K",
                           "width": "12",
@@ -5154,29 +5154,6 @@
         "xci_path": "ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0.xci",
         "inst_hier_path": "xlconstant_1"
       },
-      "preprocess_0": {
-        "vlnv": "xilinx.com:module_ref:preprocess:1.0",
-        "xci_name": "design_1_preprocess_0_0",
-        "xci_path": "ip/design_1_preprocess_0_0/design_1_preprocess_0_0.xci",
-        "inst_hier_path": "preprocess_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "preprocess",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "video_in": {
-            "direction": "I",
-            "left": "23",
-            "right": "0"
-          },
-          "video_out": {
-            "direction": "O",
-            "left": "23",
-            "right": "0"
-          }
-        }
-      },
       "postprocess_0": {
         "vlnv": "xilinx.com:module_ref:postprocess:1.0",
         "xci_name": "design_1_postprocess_0_0",
@@ -5213,21 +5190,7 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "148499090",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "design_1_clk_wiz_0_0_clk_out1",
-                "value_src": "default_prop"
-              }
-            }
+            "direction": "I"
           },
           "de_in": {
             "direction": "I"
@@ -5258,6 +5221,29 @@
             "direction": "O"
           },
           "pixel_out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      },
+      "preprocess_0": {
+        "vlnv": "xilinx.com:module_ref:preprocess:1.0",
+        "xci_name": "design_1_preprocess_0_0",
+        "xci_path": "ip/design_1_preprocess_0_0/design_1_preprocess_0_0.xci",
+        "inst_hier_path": "preprocess_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "preprocess",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "video_in": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "video_out": {
             "direction": "O",
             "left": "23",
             "right": "0"

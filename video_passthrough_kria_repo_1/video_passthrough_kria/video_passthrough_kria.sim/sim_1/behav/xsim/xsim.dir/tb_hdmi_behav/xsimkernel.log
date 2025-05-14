@@ -2,3 +2,6 @@ Running: xsim.dir/tb_hdmi_behav/xsimk -simmode gui -wdb tb_hdmi_behav.wdb -simru
 Design successfully loaded
 Design Loading Memory Usage: 33320 KB (Peak: 33320 KB)
 Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 113528 KB (Peak: 172588 KB)
+Simulation CPU Usage: 2330 ms
