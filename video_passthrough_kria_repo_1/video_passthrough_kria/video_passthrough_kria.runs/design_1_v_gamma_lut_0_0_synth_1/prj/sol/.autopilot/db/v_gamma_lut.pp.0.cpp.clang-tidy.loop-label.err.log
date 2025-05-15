@@ -1,0 +1,4 @@
+6 warnings and 26 errors generated.
+Error while processing /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.pp.0.cpp.
+clang-tidy applied 351 of 351 suggested fixes.
+Suppressed 6 warnings (6 with check filters).

@@ -45,8 +45,8 @@
       },
       "xlconstant_1": "",
       "postprocess_0": "",
-      "vision_system_0": "",
-      "preprocess_0": ""
+      "preprocess_0": "",
+      "vision_system_0": ""
     },
     "interface_ports": {
       "IIC_1_0": {
@@ -5177,6 +5177,29 @@
           }
         }
       },
+      "preprocess_0": {
+        "vlnv": "xilinx.com:module_ref:preprocess:1.0",
+        "xci_name": "design_1_preprocess_0_0",
+        "xci_path": "ip/design_1_preprocess_0_0/design_1_preprocess_0_0.xci",
+        "inst_hier_path": "preprocess_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "preprocess",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "video_in": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "video_out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          }
+        }
+      },
       "vision_system_0": {
         "vlnv": "xilinx.com:module_ref:vision_system:1.0",
         "xci_name": "design_1_vision_system_0_0",
@@ -5221,29 +5244,6 @@
             "direction": "O"
           },
           "pixel_out": {
-            "direction": "O",
-            "left": "23",
-            "right": "0"
-          }
-        }
-      },
-      "preprocess_0": {
-        "vlnv": "xilinx.com:module_ref:preprocess:1.0",
-        "xci_name": "design_1_preprocess_0_0",
-        "xci_path": "ip/design_1_preprocess_0_0/design_1_preprocess_0_0.xci",
-        "inst_hier_path": "preprocess_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "preprocess",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "video_in": {
-            "direction": "I",
-            "left": "23",
-            "right": "0"
-          },
-          "video_out": {
             "direction": "O",
             "left": "23",
             "right": "0"

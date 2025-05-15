@@ -1,0 +1,7 @@
+/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:57:23: warning: 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE ap_stable port=width
+                      ^
+/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:59:23: warning: 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE ap_stable port=height
+                      ^
+2 warnings generated.

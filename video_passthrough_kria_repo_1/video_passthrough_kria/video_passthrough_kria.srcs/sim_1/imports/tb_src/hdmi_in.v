@@ -120,8 +120,8 @@ begin
 	 vsc=vsc+1;
 
     //Poniżej ścieżka na lobaratoriach
-    //rgbfile = $fopen("/home/lsriw/SR/KocurPawel/tor_wizyjny/video_passthrough_kria_repo/geirangerfjord_64.ppm","rb");
-    rgbfile = $fopen("/home/pkocur/Documents/std/systemy_rekonfigurowalne/hand_img.ppm","rb");
+    rgbfile = $fopen("/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/hand_img.ppm","rb");
+    //rgbfile = $fopen("/home/pkocur/Documents/std/systemy_rekonfigurowalne/hand_img.ppm","rb");
 
 	 // read header file
 	 for(i=0;i<13;i=i+1)

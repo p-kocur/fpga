@@ -1,0 +1,555 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May  8 10:09:02 2025
+# Process ID: 25372
+# Current directory: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_vision_system_0_0_synth_1
+# Command line: vivado -log design_1_vision_system_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_vision_system_0_0.tcl
+# Log file: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_vision_system_0_0_synth_1/design_1_vision_system_0_0.vds
+# Journal file: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_vision_system_0_0_synth_1/vivado.jou
+# Running On: lsriw-krywan, OS: Linux, CPU Frequency: 4091.251 MHz, CPU Physical cores: 24, Host memory: 67327 MB
+#-----------------------------------------------------------
+source design_1_vision_system_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2003.758 ; gain = 85.992 ; free physical = 30644 ; free virtual = 37784
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/lsriw/SR/KocurPawel/git_ycbcr/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lsriw/SR/KocurPawel/git_ycbcr/ip_repos'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:main:1.0'. The one found in IP location '/home/lsriw/SR/KocurPawel/git_ycbcr/ip_repos/rgb2ycbcr3' will take precedence over the same IP in locations: 
+   /home/lsriw/SR/KocurPawel/git_ycbcr/ip_repos/rgb2ycbcr
+   /home/lsriw/SR/KocurPawel/git_ycbcr/ip_repos/rgb2ycbcr2
+Command: synth_design -top design_1_vision_system_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25950
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3214.941 ; gain = 235.742 ; free physical = 5118 ; free virtual = 12331
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2397.850; parent = 2277.456; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4224.527; parent = 3220.883; children = 1003.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_vision_system_0_0' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_vision_system_0_0/synth/design_1_vision_system_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'vision_system' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb2ycbcr_0' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/synth/rgb2ycbcr_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/main.v:23]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:69]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:72]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:72]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 18 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 9 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 27 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_18' declared at '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/mult_gen_0/hdl/mult_gen_v12_0_vh_rfs.vhd:21010' bound to instance 'U0' of component 'mult_gen_v12_0_18' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:123]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_0' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/mult_gen_0/synth/mult_gen_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 9 - type: integer 
+	Parameter C_B_WIDTH bound to: 9 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 9 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/c_addsub_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_0' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/c_addsub_0/synth/c_addsub_0.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'multiple_delay' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/multiple_delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'delay' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/delay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'delay' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/delay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'multiple_delay' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/multiple_delay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/src/main.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2ycbcr_0' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/ip/rgb2ycbcr_0/synth/rgb2ycbcr_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bin_ycbcr' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/bin_ycbcr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin_ycbcr' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/bin_ycbcr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vision_system' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vision_system_0_0' (0#1) [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_vision_system_0_0/synth/design_1_vision_system_0_0.v:53]
+WARNING: [Synth 8-3848] Net de_mux[15] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[14] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[13] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[12] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[11] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[10] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[9] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[8] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[7] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[6] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[5] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[4] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net de_mux[3] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:38]
+WARNING: [Synth 8-3848] Net hsync_mux[15] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[14] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[13] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[12] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[11] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[10] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[9] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[8] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[7] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[6] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[5] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[4] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net hsync_mux[3] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:39]
+WARNING: [Synth 8-3848] Net vsync_mux[15] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[14] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[13] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[12] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[11] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[10] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[9] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[8] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[7] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[6] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[5] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[4] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net vsync_mux[3] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:40]
+WARNING: [Synth 8-3848] Net rgb_mux[15] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[14] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[13] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[12] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[11] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[10] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[9] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[8] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[7] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[6] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[5] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[4] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-3848] Net rgb_mux[3] in module/entity vision_system does not have driver. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/vision_system.v:37]
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_6_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_14_lut6_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_14_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_14_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_14_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_14_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_IN in module c_addsub_v12_0_14_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[47] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[46] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[45] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[44] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[43] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[42] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[41] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[40] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[39] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[38] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[37] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[36] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[35] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[34] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[33] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[32] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[31] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[30] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[29] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[28] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[27] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[26] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[25] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[24] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[23] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[22] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[21] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[20] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[19] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[18] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[17] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[16] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[15] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[14] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[13] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[12] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[11] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[10] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[9] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[8] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[7] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[6] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[5] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[4] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[3] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[2] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[1] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_PORT[0] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[24] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[23] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[22] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[21] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[20] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[19] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[18] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[17] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[16] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[15] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[14] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[13] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[12] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[11] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[10] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[9] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[8] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[7] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[6] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[5] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[4] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[3] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[2] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[1] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[0] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SUBTRACT in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRY_IN in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[47] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[46] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[45] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[44] in module dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCASC_IN[43] in module dsp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3315.848 ; gain = 336.648 ; free physical = 3947 ; free virtual = 11168
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2517.039; parent = 2396.646; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4319.496; parent = 3315.852; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3333.660 ; gain = 354.461 ; free physical = 3932 ; free virtual = 11152
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2517.039; parent = 2396.646; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4337.309; parent = 3333.664; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3333.660 ; gain = 354.461 ; free physical = 3918 ; free virtual = 11154
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2517.039; parent = 2396.646; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4337.309; parent = 3333.664; children = 1003.645
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3339.598 ; gain = 0.000 ; free physical = 3603 ; free virtual = 10878
+INFO: [Netlist 29-17] Analyzing 306 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_vision_system_0_0/design_1_vision_system_0_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3497.410 ; gain = 0.000 ; free physical = 4424 ; free virtual = 11747
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_vision_system_0_0/design_1_vision_system_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_vision_system_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_vision_system_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3497.410 ; gain = 0.000 ; free physical = 4424 ; free virtual = 11747
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3497.410 ; gain = 0.000 ; free physical = 4425 ; free virtual = 11747
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3497.410 ; gain = 518.211 ; free physical = 3728 ; free virtual = 11085
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2517.039; parent = 2396.646; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4469.043; parent = 3465.398; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3497.410 ; gain = 518.211 ; free physical = 3677 ; free virtual = 11034
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2517.039; parent = 2396.646; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4469.043; parent = 3465.398; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_vision_system_0_0_synth_1/dont_touch.xdc, line 18).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/red_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/blue_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/blue_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/blue_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/green_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/green_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/green_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/red_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/red_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/red_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/blue_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/blue_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/blue_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/green_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/green_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/green_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/red_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/red_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/s_11. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/cb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/cr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/s_11. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/s_12. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/s_21. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/s_22. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/s_31. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/s_32. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/binary_1/rgb2ycbcr/inst/y. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/cb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/cr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/s_12. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/s_21. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/s_22. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/s_31. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/s_32. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rgb2ycbcr/inst/y. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3497.410 ; gain = 518.211 ; free physical = 3604 ; free virtual = 10961
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2517.039; parent = 2396.646; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4469.043; parent = 3465.398; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3497.410 ; gain = 518.211 ; free physical = 3530 ; free virtual = 10888
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2517.039; parent = 2396.646; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4469.043; parent = 3465.398; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 3497.410 ; gain = 518.211 ; free physical = 3098 ; free virtual = 10478
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2517.039; parent = 2396.646; children = 120.394
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4469.043; parent = 3465.398; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 3862.910 ; gain = 883.711 ; free physical = 8957 ; free virtual = 14422
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2941.204; parent = 2818.888; children = 122.316
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4866.559; parent = 3862.914; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 3862.910 ; gain = 883.711 ; free physical = 8946 ; free virtual = 14451
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2950.477; parent = 2827.537; children = 122.939
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4866.559; parent = 3862.914; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 3878.926 ; gain = 899.727 ; free physical = 13845 ; free virtual = 19332
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2955.131; parent = 2831.046; children = 124.085
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4882.574; parent = 3878.930; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 3884.863 ; gain = 905.664 ; free physical = 20103 ; free virtual = 25634
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2962.567; parent = 2836.298; children = 126.270
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4888.512; parent = 3884.867; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 3884.863 ; gain = 905.664 ; free physical = 20132 ; free virtual = 25658
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2962.567; parent = 2836.298; children = 126.270
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4888.512; parent = 3884.867; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 3884.863 ; gain = 905.664 ; free physical = 20078 ; free virtual = 25607
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2962.845; parent = 2836.572; children = 126.272
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4888.512; parent = 3884.867; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 3884.863 ; gain = 905.664 ; free physical = 20136 ; free virtual = 25665
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2962.860; parent = 2836.588; children = 126.272
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4888.512; parent = 3884.867; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 3884.863 ; gain = 905.664 ; free physical = 20204 ; free virtual = 25735
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2962.860; parent = 2836.588; children = 126.272
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4888.512; parent = 3884.867; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 3884.863 ; gain = 905.664 ; free physical = 20197 ; free virtual = 25728
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2962.860; parent = 2836.588; children = 126.272
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4888.512; parent = 3884.867; children = 1003.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp         | ((A*B')')'  | 16     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 30     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 17     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 17     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 30     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 30     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 14     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 17     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 30     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 30     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 17     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 30     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 30     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 17     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp         | ((A*B')')'  | 30     | 8      | -      | -      | 27     | 0    | 1    | -    | -    | -     | 1    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |DSP_ALU         |    15|
+|2     |DSP_A_B_DATA    |    15|
+|3     |DSP_C_DATA      |    15|
+|4     |DSP_MULTIPLIER  |    15|
+|5     |DSP_M_DATA      |    15|
+|6     |DSP_OUTPUT      |    15|
+|7     |DSP_PREADD      |    15|
+|8     |DSP_PREADD_DATA |    15|
+|9     |LUT1            |     4|
+|10    |LUT2            |    82|
+|11    |LUT4            |    26|
+|12    |LUT5            |     1|
+|13    |LUT6            |    30|
+|14    |MUXCY           |   105|
+|15    |SRL16E          |     6|
+|16    |XORCY           |   120|
+|17    |FDRE            |   132|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 3884.863 ; gain = 905.664 ; free physical = 20198 ; free virtual = 25728
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2962.907; parent = 2836.635; children = 126.272
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4888.512; parent = 3884.867; children = 1003.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 3884.863 ; gain = 741.914 ; free physical = 20217 ; free virtual = 25747
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 3884.871 ; gain = 905.664 ; free physical = 20195 ; free virtual = 25730
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3884.871 ; gain = 0.000 ; free physical = 20291 ; free virtual = 25832
+INFO: [Netlist 29-17] Analyzing 240 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3947.531 ; gain = 0.000 ; free physical = 20530 ; free virtual = 26171
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  (CARRY4) => CARRY8: 15 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 15 instances
+
+Synth Design complete, checksum: 815a0536
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 158 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 3947.531 ; gain = 1876.539 ; free physical = 20688 ; free virtual = 26335
+INFO: [Coretcl 2-1174] Renamed 179 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_vision_system_0_0_synth_1/design_1_vision_system_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_vision_system_0_0_utilization_synth.rpt -pb design_1_vision_system_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  8 10:10:21 2025...

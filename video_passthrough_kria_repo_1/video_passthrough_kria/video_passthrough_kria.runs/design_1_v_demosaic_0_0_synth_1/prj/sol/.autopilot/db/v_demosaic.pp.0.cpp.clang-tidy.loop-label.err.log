@@ -1,0 +1,4 @@
+8 warnings and 26 errors generated.
+Error while processing /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.pp.0.cpp.
+clang-tidy applied 409 of 409 suggested fixes.
+Suppressed 8 warnings (8 with check filters).

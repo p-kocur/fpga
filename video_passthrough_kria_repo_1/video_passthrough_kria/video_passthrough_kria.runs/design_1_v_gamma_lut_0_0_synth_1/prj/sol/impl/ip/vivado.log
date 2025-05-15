@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May  8 10:10:30 2025
+# Process ID: 27780
+# Current directory: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_v_gamma_lut_0_0_synth_1/prj/sol/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_v_gamma_lut_0_0_synth_1/prj/sol/impl/ip/vivado.log
+# Journal file: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_v_gamma_lut_0_0_synth_1/prj/sol/impl/ip/vivado.jou
+# Running On: lsriw-krywan, OS: Linux, CPU Frequency: 4045.328 MHz, CPU Physical cores: 24, Host memory: 67327 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu May  8 10:10:40 2025...

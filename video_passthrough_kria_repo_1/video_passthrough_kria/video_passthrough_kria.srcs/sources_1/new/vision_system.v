@@ -117,6 +117,25 @@ bin_ycbcr binary_1
     .pixel_out(rgb_mux[2])
 );
 
+wire mask;
+assign mask = (rgb_mux[2] == 0) ? 0 : 1;
+
+wire [10:0]x;
+wire [10:0]y;
+
+centroid sr_ciezkosci
+(
+    .clk(clk),
+    .ce(1'b1),
+    .rst(1'b0),
+    .hsync(hsync_in),
+    .vsync(vsync_in),
+    .de(de_in),
+    .mask(mask),
+    .x(x),
+    .y(y)
+);
+
 assign de_out = de_mux[sw];
 assign hsync_out = hsync_mux[sw];
 assign vsync_out = vsync_mux[sw];

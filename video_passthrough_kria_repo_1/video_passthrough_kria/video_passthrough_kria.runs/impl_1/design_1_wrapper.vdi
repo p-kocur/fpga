@@ -1,0 +1,1287 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May  8 10:54:20 2025
+# Process ID: 7975
+# Current directory: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/vivado.jou
+# Running On: lsriw-krywan, OS: Linux, CPU Frequency: 3583.752 MHz, CPU Physical cores: 24, Host memory: 67327 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/lsriw/SR/KocurPawel/git_ycbcr/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lsriw/SR/KocurPawel/git_ycbcr/ip_repos'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:main:1.0'. The one found in IP location '/home/lsriw/SR/KocurPawel/git_ycbcr/ip_repos/rgb2ycbcr3' will take precedence over the same IP in locations: 
+   /home/lsriw/SR/KocurPawel/git_ycbcr/ip_repos/rgb2ycbcr
+   /home/lsriw/SR/KocurPawel/git_ycbcr/ip_repos/rgb2ycbcr2
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2367.516 ; gain = 295.301 ; free physical = 54094 ; free virtual = 60120
+Command: link_design -top design_1_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_postprocess_0_0/design_1_postprocess_0_0.dcp' for cell 'design_1_i/postprocess_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_preprocess_0_0/design_1_preprocess_0_0.dcp' for cell 'design_1_i/preprocess_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_vision_system_0_0/design_1_vision_system_0_0.dcp' for cell 'design_1_i/vision_system_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp' for cell 'design_1_i/PS_0/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.dcp' for cell 'design_1_i/PS_0/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/PS_0/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.dcp' for cell 'design_1_i/PS_0/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/design_1_mipi_csi2_rx_subsyst_0_0.dcp' for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.dcp' for cell 'design_1_i/PS_0/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0.dcp' for cell 'design_1_i/PS_0/rst_ps8_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0.dcp' for cell 'design_1_i/PS_0/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0.dcp' for cell 'design_1_i/PS_0/v_demosaic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_gamma_lut_0_0/design_1_v_gamma_lut_0_0.dcp' for cell 'design_1_i/PS_0/v_gamma_lut_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0.dcp' for cell 'design_1_i/PS_0/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0.dcp' for cell 'design_1_i/PS_0/v_tpg_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.dcp' for cell 'design_1_i/PS_0/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/PS_0/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.dcp' for cell 'design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1.dcp' for cell 'design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0.dcp' for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_d10d_r_sync_0.dcp' for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/r_sync'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_d10d_rx_0.dcp' for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx'
+INFO: [Project 1-454] Reading design checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_3/bd_d10d_vfb_0_0.dcp' for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/vfb_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.49 . Memory (MB): peak = 3092.238 ; gain = 0.000 ; free physical = 53139 ; free virtual = 59165
+INFO: [Netlist 29-17] Analyzing 935 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_d10d_rx_0.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_d10d_rx_0.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/PS_0/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/PS_0/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0.xdc] for cell 'design_1_i/PS_0/rst_ps8_0_100M/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0.xdc] for cell 'design_1_i/PS_0/rst_ps8_0_100M/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_board.xdc] for cell 'design_1_i/PS_0/rst_ps8_0_100M/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_board.xdc] for cell 'design_1_i/PS_0/rst_ps8_0_100M/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/PS_0/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/PS_0/proc_sys_reset_0/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/PS_0/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/PS_0/proc_sys_reset_0/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/design_1_mipi_csi2_rx_subsyst_0_0_board.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/design_1_mipi_csi2_rx_subsyst_0_0_board.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_d10d_phy_0_hssio_rx.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_d10d_phy_0_rx_support_i/slave_rx.bd_d10d_phy_0_rx_hssio_i/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/ip_0/bd_d10d_phy_0_hssio_rx.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_d10d_phy_0_rx_support_i/slave_rx.bd_d10d_phy_0_rx_hssio_i/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/PS_0/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/PS_0/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_d10d_r_sync_0.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/r_sync/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_d10d_r_sync_0.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/r_sync/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_d10d_r_sync_0_board.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/r_sync/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_d10d_r_sync_0_board.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/r_sync/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/PS_0/clk_wiz_1/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/PS_0/clk_wiz_1/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/PS_0/clk_wiz_1/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/PS_0/clk_wiz_1/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/PS_0/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/PS_0/clk_wiz_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/PS_0/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/PS_0/clk_wiz_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc] for cell 'design_1_i/PS_0/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:84]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc:220]
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc] for cell 'design_1_i/PS_0/axi_vdma_0/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/PS_0/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/PS_0/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/constrs_1/imports/video_passthrough_kria_repo/kria.xdc]
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/constrs_1/imports/video_passthrough_kria_repo/kria.xdc]
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc] for cell 'design_1_i/PS_0/axi_vdma_0/U0'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc] for cell 'design_1_i/PS_0/axi_vdma_0/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_late.xdc] for cell 'design_1_i/PS_0/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_late.xdc] for cell 'design_1_i/PS_0/clk_wiz_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_late.xdc] for cell 'design_1_i/PS_0/clk_wiz_1/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_late.xdc] for cell 'design_1_i/PS_0/clk_wiz_1/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0_clocks.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst'
+WARNING: [Vivado 12-508] No pins matched '*en_hs_datapath_reg/C'. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0_clocks.xdc:74]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0_clocks.xdc:74]
+WARNING: [Vivado 12-508] No pins matched '*init_done_reg/C'. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0_clocks.xdc:75]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0_clocks.xdc:75]
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_d10d_phy_0_clocks.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/design_1_mipi_csi2_rx_subsyst_0_0_impl.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_mipi_csi2_rx_subsyst_0_0/design_1_mipi_csi2_rx_subsyst_0_0_impl.xdc] for cell 'design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'design_1_i/PS_0/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'design_1_i/PS_0/v_axi4s_vid_out_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0.xdc] for cell 'design_1_i/PS_0/v_demosaic_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_demosaic_0_0/design_1_v_demosaic_0_0.xdc] for cell 'design_1_i/PS_0/v_demosaic_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_gamma_lut_0_0/design_1_v_gamma_lut_0_0.xdc] for cell 'design_1_i/PS_0/v_gamma_lut_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_gamma_lut_0_0/design_1_v_gamma_lut_0_0.xdc] for cell 'design_1_i/PS_0/v_gamma_lut_0/inst'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/PS_0/v_tc_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc:2]
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1_i/PS_0/v_tc_0/U0'
+Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0.xdc] for cell 'design_1_i/PS_0/v_tpg_0/inst'
+Finished Parsing XDC File [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0.xdc] for cell 'design_1_i/PS_0/v_tpg_0/inst'
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/xpm_array_single_01 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[44].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/ecc_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/img_info_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[0].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[9].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[10].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[11].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[12].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[13].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[14].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[15].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[16].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[17].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[18].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[1].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[19].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[20].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[21].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[22].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[23].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[24].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[25].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[26].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[27].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[28].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[2].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[29].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[30].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[31].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[32].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[33].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[34].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[35].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[36].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[37].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[38].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[3].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[39].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[40].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[41].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[42].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[43].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[4].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[5].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[6].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[7].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.isr_cdc/HSC2R_CDC[8].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/xpm_single_05 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/xpm_single_02 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/xpm_single_vfb_01 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-1714] 273 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4027.414 ; gain = 0.000 ; free physical = 52456 ; free virtual = 58484
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 141 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 36 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 3 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 90 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+38 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 4027.414 ; gain = 1659.898 ; free physical = 52456 ; free virtual = 58484
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4027.414 ; gain = 0.000 ; free physical = 52468 ; free virtual = 58497
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1c2d6999a
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 4027.414 ; gain = 0.000 ; free physical = 52465 ; free virtual = 58494
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_realign_cmd_cmplt_reg_i_1 into driver instance design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_realigner_btt2[15]_i_2, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/sig_tlast_out_i_1__0 into driver instance design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/sig_dre_tvalid_i_i_4, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/isr_i[31]_i_1 into driver instance design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/isr_i[55]_i_4, which resulted in an inversion of 28 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/phecc/diwc_valid_i_1 into driver instance design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/phecc/diwc_valid_i_2, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/current_word_1[3]_i_1 into driver instance design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/s_axi_rvalid_INST_0_i_3, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.USE_SPLIT.write_resp_inst/first_mi_word_i_2 into driver instance design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.USE_SPLIT.write_resp_inst/s_axi_bvalid_INST_0_i_1, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/current_word_1[3]_i_1 into driver instance design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/s_axi_rvalid_INST_0_i_3, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.USE_SPLIT.write_resp_inst/first_mi_word_i_2 into driver instance design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.USE_SPLIT.write_resp_inst/s_axi_bvalid_INST_0_i_1, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_ready_d[2]_i_2 into driver instance design_1_i/PS_0/ps8_0_axi_periph/xbar/inst/gen_sasd.crossbar_sasd_0/addr_arbiter_inst/m_ready_d[2]_i_3, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance design_1_i/PS_0/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/v_demosaic_0/inst/Debayer_U0/DebayerRandBatG_U0/grp_DebayerRandBatG_Pipeline_VITIS_LOOP_836_2_fu_144/icmp_ln836_reg_1933[0]_i_1 into driver instance design_1_i/PS_0/v_demosaic_0/inst/Debayer_U0/DebayerRandBatG_U0/grp_DebayerRandBatG_Pipeline_VITIS_LOOP_836_2_fu_144/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_33__0, which resulted in an inversion of 32 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/grp_reg_ap_uint_10_s_fu_2159/xCount_V_2[7]_i_2 into driver instance design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/grp_reg_ap_uint_10_s_fu_2159/xCount_V_2[9]_i_23, which resulted in an inversion of 11 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/tpgTartanBarArray_U/q0[1]_i_1__0 into driver instance design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/tpgTartanBarArray_U/q0[9]_i_5, which resulted in an inversion of 13 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/q0[1]_i_1 into driver instance design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/tpgTartanBarArray_U/q0[9]_i_3, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/q0[1]_i_2 into driver instance design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/tpgTartanBarArray_U/q0[9]_i_4, which resulted in an inversion of 13 pins
+INFO: [Opt 31-138] Pushed 86 inverter(s) to 6887 load pin(s).
+INFO: [Opt 31-925] Fixed cascade connection for DSP: design_1_i/PS_0/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_273_4_fu_202/mac_muladd_14s_10ns_24s_25_4_1_U61/design_1_v_demosaic_0_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_3_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: design_1_i/PS_0/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_273_4_fu_202/mac_muladd_14s_10ns_24s_25_4_1_U62/design_1_v_demosaic_0_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_3_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mac_muladd_16ns_8s_23s_24_4_1_U68/design_1_v_tpg_0_0_mac_muladd_16ns_8s_23s_24_4_1_DSP48_7_U/p_reg_reg
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 14c3e1ace
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4033.180 ; gain = 0.000 ; free physical = 52261 ; free virtual = 58289
+INFO: [Opt 31-389] Phase Retarget created 309 cells and removed 1288 cells
+INFO: [Opt 31-1021] In phase Retarget, 370 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 14d39be3e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 4033.180 ; gain = 0.000 ; free physical = 52267 ; free virtual = 58296
+INFO: [Opt 31-389] Phase Constant propagation created 28 cells and removed 741 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 625 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1ae232d4d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 4033.180 ; gain = 0.000 ; free physical = 52297 ; free virtual = 58326
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3601 cells
+INFO: [Opt 31-1021] In phase Sweep, 609 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: 1ae232d4d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 4033.180 ; gain = 0.000 ; free physical = 52305 ; free virtual = 58333
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1ae232d4d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 4033.180 ; gain = 0.000 ; free physical = 52305 ; free virtual = 58333
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 12dfae806
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 4033.180 ; gain = 0.000 ; free physical = 52305 ; free virtual = 58333
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 167 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             309  |            1288  |                                            370  |
+|  Constant propagation         |              28  |             741  |                                            625  |
+|  Sweep                        |               0  |            3601  |                                            609  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            167  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4033.180 ; gain = 0.000 ; free physical = 52326 ; free virtual = 58354
+Ending Logic Optimization Task | Checksum: 113a88933
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 4033.180 ; gain = 0.000 ; free physical = 52326 ; free virtual = 58354
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 47 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 10 WE to EN ports
+Number of BRAM Ports augmented: 14 newly gated: 10 Total Ports: 94
+Ending PowerOpt Patch Enables Task | Checksum: 1bad63e6b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4966.125 ; gain = 0.000 ; free physical = 52090 ; free virtual = 58124
+Ending Power Optimization Task | Checksum: 1bad63e6b
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 4966.125 ; gain = 932.945 ; free physical = 52135 ; free virtual = 58169
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 19cdb74b0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 4966.125 ; gain = 0.000 ; free physical = 52148 ; free virtual = 58182
+Ending Final Cleanup Task | Checksum: 19cdb74b0
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4966.125 ; gain = 0.000 ; free physical = 52148 ; free virtual = 58182
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4966.125 ; gain = 0.000 ; free physical = 52148 ; free virtual = 58182
+Ending Netlist Obfuscation Task | Checksum: 19cdb74b0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4966.125 ; gain = 0.000 ; free physical = 52148 ; free virtual = 58182
+INFO: [Common 17-83] Releasing license: Implementation
+85 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:32 . Memory (MB): peak = 4966.125 ; gain = 938.711 ; free physical = 52148 ; free virtual = 58182
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4966.125 ; gain = 0.000 ; free physical = 52123 ; free virtual = 58166
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 4966.125 ; gain = 0.000 ; free physical = 52105 ; free virtual = 58155
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 5440.289 ; gain = 474.164 ; free physical = 51119 ; free virtual = 57299
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51064 ; free virtual = 57245
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 143060949
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51064 ; free virtual = 57245
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51064 ; free virtual = 57245
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1669c88a7
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51105 ; free virtual = 57290
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1ae76e741
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51193 ; free virtual = 57380
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1ae76e741
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51193 ; free virtual = 57380
+Phase 1 Placer Initialization | Checksum: 1ae76e741
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51193 ; free virtual = 57380
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1759481f9
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:18 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51315 ; free virtual = 57503
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 28220803a
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:18 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51323 ; free virtual = 57513
+
+Phase 2.1.1.3 PBP: Discrete Incremental
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 1b466f2bd
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:18 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51323 ; free virtual = 57513
+
+Phase 2.1.1.4 PBP: Compute Congestion
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 1b466f2bd
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:19 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51213 ; free virtual = 57455
+
+Phase 2.1.1.5 PBP: Macro Placement
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 2223d59a8
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:19 . Memory (MB): peak = 5440.289 ; gain = 0.000 ; free physical = 51213 ; free virtual = 57455
+
+Phase 2.1.1.6 PBP: UpdateTiming
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 1a984c65a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 5460.641 ; gain = 20.352 ; free physical = 51207 ; free virtual = 57450
+
+Phase 2.1.1.7 PBP: Add part constraints
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 1a984c65a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 5460.641 ; gain = 20.352 ; free physical = 51207 ; free virtual = 57450
+Phase 2.1.1 Partition Driven Placement | Checksum: 1a984c65a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 5460.641 ; gain = 20.352 ; free physical = 51214 ; free virtual = 57457
+Phase 2.1 Floorplanning | Checksum: 1a984c65a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 5460.641 ; gain = 20.352 ; free physical = 51214 ; free virtual = 57457
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1a984c65a
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 5460.641 ; gain = 20.352 ; free physical = 51214 ; free virtual = 57457
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1834e0fbb
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:20 . Memory (MB): peak = 5460.641 ; gain = 20.352 ; free physical = 51214 ; free virtual = 57457
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 23e5a0583
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:39 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51302 ; free virtual = 57545
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 88 LUTNM shape to break, 1269 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 51, two critical 37, total 88, new lutff created 4
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 577 nets or LUTs. Breaked 88 LUTs, combined 489 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 9 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 6 nets.  Re-placed 19 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 6 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 19 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51295 ; free virtual = 57540
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/xpm_arst_04/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net design_1_i/PS_0/rst_ps8_0_100M/U0/peripheral_aresetn[0]. Replicated 21 times.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/xpm_arst_01/src_arst or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-232] Optimized 1 net. Created 21 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 21 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51292 ; free virtual = 57538
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51292 ; free virtual = 57538
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           88  |            489  |                   577  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     6  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |           21  |              0  |                     1  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          109  |            489  |                   584  |           0  |          10  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 22f1c8b99
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:43 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51282 ; free virtual = 57528
+Phase 2.4 Global Placement Core | Checksum: 20d82b24f
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:45 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51191 ; free virtual = 57436
+Phase 2 Global Placement | Checksum: 20d82b24f
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:45 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51207 ; free virtual = 57452
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1a57f7b42
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:00:46 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51226 ; free virtual = 57471
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a676a9c3
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:48 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51239 ; free virtual = 57484
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1782c7995
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:52 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51227 ; free virtual = 57473
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 18bd7388e
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:53 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51227 ; free virtual = 57473
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 1430abb2a
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:00:55 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51230 ; free virtual = 57476
+Phase 3.3.3 Slice Area Swap | Checksum: 1430abb2a
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:00:55 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51230 ; free virtual = 57476
+Phase 3.3 Small Shape DP | Checksum: 2378e8011
+
+Time (s): cpu = 00:02:18 ; elapsed = 00:00:58 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51260 ; free virtual = 57506
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 25b38116e
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:00:59 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51266 ; free virtual = 57512
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 1324d3aac
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:00:59 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51269 ; free virtual = 57515
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1e0d2b16f
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:05 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51256 ; free virtual = 57502
+Phase 3 Detail Placement | Checksum: 1e0d2b16f
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:05 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51256 ; free virtual = 57502
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: a902b8ba
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.399 | TNS=-10.436 |
+Phase 1 Physical Synthesis Initialization | Checksum: c94b2f2c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.77 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51220 ; free virtual = 57466
+INFO: [Place 46-35] Processed net design_1_i/PS_0/v_tc_0/U0/U_VIDEO_CTRL/resetn_out, inserted BUFG to drive 1155 loads.
+INFO: [Place 46-45] Replicated bufg driver design_1_i/PS_0/v_tc_0/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.soft_resetn_reg_replica
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1434cb44e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51224 ; free virtual = 57470
+Phase 4.1.1.1 BUFG Insertion | Checksum: 20953e78d
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:13 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51224 ; free virtual = 57470
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.163. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1172a925f
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:39 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51266 ; free virtual = 57512
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:39 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51266 ; free virtual = 57512
+Phase 4.1 Post Commit Optimization | Checksum: 1172a925f
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:39 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51266 ; free virtual = 57512
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51176 ; free virtual = 57422
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 11a24d920
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:01:46 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51182 ; free virtual = 57428
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 11a24d920
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:01:46 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51190 ; free virtual = 57436
+Phase 4.3 Placer Reporting | Checksum: 11a24d920
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:01:46 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51190 ; free virtual = 57436
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51190 ; free virtual = 57436
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:01:46 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51190 ; free virtual = 57436
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 106c82fec
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:01:46 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51190 ; free virtual = 57436
+Ending Placer Task | Checksum: b7aad6aa
+
+Time (s): cpu = 00:03:44 ; elapsed = 00:01:46 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51190 ; free virtual = 57436
+INFO: [Common 17-83] Releasing license: Implementation
+131 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:49 ; elapsed = 00:01:48 . Memory (MB): peak = 5468.645 ; gain = 28.355 ; free physical = 51295 ; free virtual = 57541
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51198 ; free virtual = 57506
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51238 ; free virtual = 57505
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.31 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51092 ; free virtual = 57358
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.34 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51075 ; free virtual = 57343
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:04 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 51059 ; free virtual = 57327
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+140 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 50955 ; free virtual = 57286
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 50988 ; free virtual = 57277
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 37807fef ConstDB: 0 ShapeSum: 7d300ffa RouteDB: 2fa46c1
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.54 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 50798 ; free virtual = 57091
+Post Restoration Checksum: NetGraph: 16babee9 NumContArr: 136046ca Constraints: 779a5c53 Timing: 0
+Phase 1 Build RT Design | Checksum: a1b56206
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 50845 ; free virtual = 57138
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: a1b56206
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 50793 ; free virtual = 57086
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: a1b56206
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 5468.645 ; gain = 0.000 ; free physical = 50794 ; free virtual = 57088
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 16c219e01
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 5536.625 ; gain = 67.980 ; free physical = 50725 ; free virtual = 57019
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2374e6c14
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:12 . Memory (MB): peak = 5536.625 ; gain = 67.980 ; free physical = 50738 ; free virtual = 57032
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.249  | TNS=0.000  | WHS=-0.094 | THS=-159.880|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 15ecdbb9b
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:20 . Memory (MB): peak = 5536.625 ; gain = 67.980 ; free physical = 50792 ; free virtual = 57087
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.249  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 18f4d26f9
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:20 . Memory (MB): peak = 5542.617 ; gain = 73.973 ; free physical = 50795 ; free virtual = 57089
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 40466
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 34699
+  Number of Partially Routed Nets     = 5767
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 18680550e
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:21 . Memory (MB): peak = 5582.906 ; gain = 114.262 ; free physical = 50731 ; free virtual = 57025
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 18680550e
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:21 . Memory (MB): peak = 5582.906 ; gain = 114.262 ; free physical = 50731 ; free virtual = 57025
+Phase 3 Initial Routing | Checksum: 2dbbfd2a8
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:27 . Memory (MB): peak = 5582.906 ; gain = 114.262 ; free physical = 50723 ; free virtual = 57017
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 8026
+ Number of Nodes with overlaps = 796
+ Number of Nodes with overlaps = 145
+ Number of Nodes with overlaps = 35
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.086  | TNS=0.000  | WHS=-0.038 | THS=-0.739 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1b4a7c614
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:07 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50747 ; free virtual = 57042
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.086  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 3527cae9f
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:10 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50761 ; free virtual = 57056
+Phase 4 Rip-up And Reroute | Checksum: 3527cae9f
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:11 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50761 ; free virtual = 57056
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 2cec15caa
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:11 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50766 ; free virtual = 57060
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2cec15caa
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:11 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50766 ; free virtual = 57060
+Phase 5 Delay and Skew Optimization | Checksum: 2cec15caa
+
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:11 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50766 ; free virtual = 57060
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1da99ad42
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:01:15 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50784 ; free virtual = 57078
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.086  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 297b22b06
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:15 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50784 ; free virtual = 57078
+Phase 6 Post Hold Fix | Checksum: 297b22b06
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:15 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50784 ; free virtual = 57078
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.41217 %
+  Global Horizontal Routing Utilization  = 4.49748 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 2681a7660
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:15 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50784 ; free virtual = 57078
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2681a7660
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:01:16 . Memory (MB): peak = 5780.906 ; gain = 312.262 ; free physical = 50782 ; free virtual = 57077
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2681a7660
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:17 . Memory (MB): peak = 5796.914 ; gain = 328.270 ; free physical = 50783 ; free virtual = 57078
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 2681a7660
+
+Time (s): cpu = 00:03:33 ; elapsed = 00:01:18 . Memory (MB): peak = 5796.914 ; gain = 328.270 ; free physical = 50787 ; free virtual = 57082
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.086  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 2681a7660
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:19 . Memory (MB): peak = 5796.914 ; gain = 328.270 ; free physical = 50795 ; free virtual = 57090
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:19 . Memory (MB): peak = 5796.914 ; gain = 328.270 ; free physical = 50891 ; free virtual = 57185
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+156 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:50 ; elapsed = 00:01:21 . Memory (MB): peak = 5796.914 ; gain = 328.270 ; free physical = 50891 ; free virtual = 57185
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 5796.914 ; gain = 0.000 ; free physical = 50800 ; free virtual = 57164
+INFO: [Common 17-1381] The checkpoint '/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 5804.918 ; gain = 8.004 ; free physical = 50834 ; free virtual = 57152
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:28 ; elapsed = 00:00:08 . Memory (MB): peak = 5812.922 ; gain = 0.000 ; free physical = 50777 ; free virtual = 57096
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+168 Infos, 83 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 5836.934 ; gain = 24.012 ; free physical = 50672 ; free virtual = 57004
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/PS_0/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/PS_0/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/gen_pkt_fifo/pkt_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/gen_pkt_fifo/pkt_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/RX_1500M.line_buffer/line_buf/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/LANE_2.ppi_fifo1/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/LANE_2.ppi_fifo1/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/LANE_1.ppi_fifo0/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/LANE_1.ppi_fifo0/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/rx/inst/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/PS_0/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <design_1_i/PS_0/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/PS_0/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mac_muladd_16ns_8ns_23ns_24_4_1_U67/design_1_v_tpg_0_0_mac_muladd_16ns_8ns_23ns_24_4_1_DSP48_6_U/p_reg_reg input design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mac_muladd_16ns_8ns_23ns_24_4_1_U67/design_1_v_tpg_0_0_mac_muladd_16ns_8ns_23ns_24_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-2] Input pipelining: DSP design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mac_muladd_16s_16s_16ns_16_4_1_U60/design_1_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_1_U/p_reg_reg input design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mac_muladd_16s_16s_16ns_16_4_1_U60/design_1_v_tpg_0_0_mac_muladd_16s_16s_16ns_16_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mul_mul_11ns_12ns_23_4_1_U61/design_1_v_tpg_0_0_mul_mul_11ns_12ns_23_4_1_DSP48_2_U/p_reg_tmp_reg multiplier stage design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mul_mul_11ns_12ns_23_4_1_U61/design_1_v_tpg_0_0_mul_mul_11ns_12ns_23_4_1_DSP48_2_U/p_reg_tmp_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mul_mul_11ns_12ns_23_4_1_U62/design_1_v_tpg_0_0_mul_mul_11ns_12ns_23_4_1_DSP48_2_U/p_reg_tmp_reg multiplier stage design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mul_mul_11ns_12ns_23_4_1_U62/design_1_v_tpg_0_0_mul_mul_11ns_12ns_23_4_1_DSP48_2_U/p_reg_tmp_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-4] MREG Output pipelining: DSP design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mul_mul_11ns_12ns_23_4_1_U63/design_1_v_tpg_0_0_mul_mul_11ns_12ns_23_4_1_DSP48_2_U/p_reg_tmp_reg multiplier stage design_1_i/PS_0/v_tpg_0/inst/grp_v_tpgHlsDataFlow_fu_339/tpgBackground_U0/grp_tpgBackground_Pipeline_VITIS_LOOP_520_2_fu_504/mul_mul_11ns_12ns_23_4_1_U63/design_1_v_tpg_0_0_mul_mul_11ns_12ns_23_4_1_DSP48_2_U/p_reg_tmp_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A2)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A2)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC REQP-1934] RAMB18E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+WARNING: [DRC REQP-1934] RAMB18E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+WARNING: [DRC REQP-1935] RAMB36E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+WARNING: [DRC REQP-1935] RAMB36E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (design_1_i/PS_0/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+WARNING: [DRC RTSTAT-10] No routable loads: 80 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_d10d_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/fifo_rd_rst_t1_nxt, design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_d10d_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[0].rx_data_lane_inst/fifo_rd_rst_t1_nxt, design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_d10d_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[1].rx_data_lane_inst/fifo_rd_rst_t2, design_1_i/PS_0/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_d10d_phy_0_rx_support_i/slave_rx.dphy_rx_fab_top/gen_rx_data_lane[0].rx_data_lane_inst/fifo_rd_rst_t2, design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], design_1_i/PS_0/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], design_1_i/PS_0/ps8_0_axi_periph/s01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0]... and (the first 15 of 50 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 16 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 5880.828 ; gain = 43.895 ; free physical = 50549 ; free virtual = 56896
+INFO: [Common 17-206] Exiting Vivado at Thu May  8 11:00:19 2025...

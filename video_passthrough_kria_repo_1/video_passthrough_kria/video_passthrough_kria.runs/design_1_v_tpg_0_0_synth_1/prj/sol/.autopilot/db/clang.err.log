@@ -1,0 +1,4 @@
+/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:383:33: warning: extra token before variable expression is ignored [-Wextra-tokens]
+#pragma HLS INTERFACE axis port=&s_axis_video register
+                                ^
+1 warning generated.
