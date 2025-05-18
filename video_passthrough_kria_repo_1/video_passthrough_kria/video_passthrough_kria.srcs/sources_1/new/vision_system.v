@@ -118,7 +118,7 @@ bin_ycbcr binary_1
 );
 
 wire mask;
-assign mask = (rgb_mux[2] == 0) ? 0 : 1;
+assign mask = (rgb_mux[2] != 24'hFFFFFF) ? 1'b0 : 1'b1;
 
 wire [10:0]x;
 wire [10:0]y;
@@ -134,6 +134,23 @@ centroid sr_ciezkosci
     .mask(mask),
     .x(x),
     .y(y)
+);
+
+vis_centroid visualize_sr_ciez
+(
+    .clk(clk),
+    .ce(1'b1),
+    .rst(1'b0),
+    .hsync(hsync_in),
+    .vsync(vsync_in),
+    .de(de_in),
+    .x(x),
+    .y(y),
+    .red_i(rgb_mux[2]),
+    .de_out(de_mux[3]),
+    .hsync_out(hsync_mux[3]),
+    .vsync_out(vsync_mux[3]),
+    .red_o(rgb_mux[3])
 );
 
 assign de_out = de_mux[sw];
