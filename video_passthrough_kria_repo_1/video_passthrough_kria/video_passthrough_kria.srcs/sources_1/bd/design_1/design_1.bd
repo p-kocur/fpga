@@ -44,8 +44,8 @@
         "zynq_ultra_ps_e_0": ""
       },
       "xlconstant_1": "",
-      "postprocess_0": "",
       "preprocess_0": "",
+      "postprocess_0": "",
       "vision_system_0": ""
     },
     "interface_ports": {
@@ -5154,29 +5154,6 @@
         "xci_path": "ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0.xci",
         "inst_hier_path": "xlconstant_1"
       },
-      "postprocess_0": {
-        "vlnv": "xilinx.com:module_ref:postprocess:1.0",
-        "xci_name": "design_1_postprocess_0_0",
-        "xci_path": "ip/design_1_postprocess_0_0/design_1_postprocess_0_0.xci",
-        "inst_hier_path": "postprocess_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "postprocess",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "video_in": {
-            "direction": "I",
-            "left": "23",
-            "right": "0"
-          },
-          "video_out": {
-            "direction": "O",
-            "left": "35",
-            "right": "0"
-          }
-        }
-      },
       "preprocess_0": {
         "vlnv": "xilinx.com:module_ref:preprocess:1.0",
         "xci_name": "design_1_preprocess_0_0",
@@ -5196,6 +5173,29 @@
           "video_out": {
             "direction": "O",
             "left": "23",
+            "right": "0"
+          }
+        }
+      },
+      "postprocess_0": {
+        "vlnv": "xilinx.com:module_ref:postprocess:1.0",
+        "xci_name": "design_1_postprocess_0_0",
+        "xci_path": "ip/design_1_postprocess_0_0/design_1_postprocess_0_0.xci",
+        "inst_hier_path": "postprocess_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "postprocess",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "video_in": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "video_out": {
+            "direction": "O",
+            "left": "35",
             "right": "0"
           }
         }

@@ -33,8 +33,8 @@ module centroid
     output [10:0]y
 );
 
-reg [10:0]IMG_H = 11'd1080;
-reg [10:0]IMG_W = 11'd1920;
+reg [10:0]IMG_H = 11'd64;
+reg [10:0]IMG_W = 11'd64;
 
 reg [10:0]x_pos = 0;
 reg [10:0]y_pos = 0;

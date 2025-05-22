@@ -37,8 +37,8 @@ module vis_centroid
     output [23:0]red_o
 );
 
-reg [10:0]IMG_H = 11'd1080;
-reg [10:0]IMG_W = 11'd1920;
+reg [10:0]IMG_H = 11'd64;
+reg [10:0]IMG_W = 11'd64;
 
 reg [10:0]x_pos = 0;
 reg [10:0]y_pos = 0;
@@ -72,6 +72,6 @@ end
 assign hsync_out = hsync;
 assign vsync_out = vsync;
 assign de_out = de;
-assign red_o = ((x_pos == x || y_pos == y) ? 24'hFF0000 : red_i);
+assign red_o = ((x_pos == x || y_pos == y) ? 24'h0000FF : red_i);
 
 endmodule

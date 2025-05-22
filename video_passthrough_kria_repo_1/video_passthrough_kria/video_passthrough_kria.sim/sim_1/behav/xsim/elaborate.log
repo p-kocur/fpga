@@ -4,6 +4,8 @@ Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9380] size mismatch in mixed-language port association of VHDL port 'b' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/accumulator.v:40]
+WARNING: [VRFC 10-9380] size mismatch in mixed-language port association of VHDL port 'b' [/home/lsriw/SR/KocurPawel/git_ycbcr/video_passthrough_kria_repo_1/video_passthrough_kria/video_passthrough_kria.srcs/sources_1/new/accumulator.v:40]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -49,12 +51,6 @@ Compiling module xil_defaultlib.multiple_delay(N=3,DELAY=5)
 Compiling module xil_defaultlib.main
 Compiling module xil_defaultlib.rgb2ycbcr_0
 Compiling module xil_defaultlib.bin_ycbcr
-Compiling architecture rtl of entity c_addsub_v12_0_14.c_addsub_v12_0_14_lut6_legacy [\c_addsub_v12_0_14_lut6_legacy(c...]
-Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_fabric_legacy [\c_addsub_v12_0_14_fabric_legacy...]
-Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_legacy [\c_addsub_v12_0_14_legacy(c_fami...]
-Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
-Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
-Compiling architecture c_addsub_3_arch of entity xil_defaultlib.c_addsub_3 [c_addsub_3_default]
 Compiling module xil_defaultlib.accumulator
 Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
 Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]

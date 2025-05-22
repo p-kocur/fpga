@@ -26,6 +26,6 @@ module postprocess
     output [35:0]video_out
 );
 
-assign video_out={video_in[23:16], 4'b0000, video_in[7:0], 4'b0000, video_in[15:8], 4'b0000};
+assign video_out={video_in[7:0], 4'b0000, video_in[23:16], 4'b0000, video_in[15:8], 4'b0000};
 
 endmodule
